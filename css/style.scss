@@ -125,48 +125,25 @@ a:focus {
     align-items: center;
 }
 
-.search_form {
-    display: grid;
-    margin: 0;
-    position: relative;
-    .form-control {
-        border-radius: 45px;
-        height: 40px;
-        min-width: unset;
-        border: none;
-    }
-    button {
-        position: absolute;
-        top: 3px;
-        right: 3px;
-        width: 35px;
-        height: 35px;
-        padding: 0;
-        border: none;
-        outline: none;
-        color: $white;
-        background-color: $primary1;
-        border-radius: 100%;
-    }
-}
-
 .search-login {
     display: grid;
     margin: 20px;
     -ms-transform: translate(100%, 100%);
-    transform: translate(20%, 10%);
-    .login {
-        position: relative;
-        width: 120px;
-        height: 36px;
-        margin-top: inherit;
-        left: 86%;
-        background-color: #fd922e;
-        color: #ffffff;
-        border-radius: 18px;
-        border: 1px solid #fd922e;
-        -webkit-transition: all 0.3s;
-        transition: all 0.3s;
+    transform: translate(10%, 10%);
+    .frm-login {
+        .login {
+            position: relative;
+            width: 120%;
+            height: 36px;
+            padding: 0 25px;
+            background-color: $primary1;
+            color: #ffffff;
+            border-radius: 18px;
+            border: 1px solid $primary1;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+            align-items: center;
+        }
     }
 }
 
@@ -261,15 +238,211 @@ a:focus {
 /*end header section*/
 
 
+/* login form section */
+
+.container-login {
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.forms-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0rem 5rem;
+    transition: all 0.2s 0.7s;
+    overflow: hidden;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.signin {
+    position: absolute;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    left: 75%;
+    width: 50%;
+    transition: 1s 0.7s ease-in-out;
+    display: grid;
+    grid-template-columns: 1fr;
+    z-index: 5;
+}
+
+.title {
+    font-size: 2.2rem;
+    color: $primary2;
+    margin-bottom: 10px;
+}
+
+.input-field {
+    max-width: 380px;
+    width: 100%;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    height: 55px;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+    position: relative;
+}
+
+.input-field i {
+    text-align: center;
+    line-height: 55px;
+    color: #acacac;
+    transition: 0.5s;
+    font-size: 1.1rem;
+}
+
+.input-field input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.input-field input::placeholder {
+    color: #aaa;
+    font-weight: 500;
+}
+
+.btn {
+    width: 150px;
+    background-color: #fca554;
+    border: none;
+    outline: none;
+    height: 40px;
+    border-radius: 49px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background-color: $primary1;
+}
+
+.container-login:before {
+    content: "";
+    position: absolute;
+    height: 2000px;
+    width: 2000px;
+    top: -10%;
+    right: 48%;
+    transform: translateY(-50%);
+    background-image: linear-gradient(-45deg, #05539c 0%, #198ffe 100%);
+    transition: 1.8s ease-in-out;
+    border-radius: 50%;
+    z-index: 6;
+}
+
+.panels-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.image {
+    width: 100%;
+    transition: transform 1.1s ease-in-out;
+    transition-delay: 0.4s;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    text-align: center;
+    z-index: 6;
+}
+
+.left-panel {
+    pointer-events: all;
+    padding: 3rem 17% 2rem 12%;
+}
+
+.panel .content {
+    color: #fff;
+    transition: transform 0.9s ease-in-out;
+    transition-delay: 0.6s;
+}
+
+.panel h3 {
+    font-weight: 600;
+    line-height: 1;
+    font-size: 1.5rem;
+}
+
+.panel p {
+    font-size: 0.95rem;
+    padding: 0.7rem 0;
+}
+
+
+/* end login form section */
+
+
 /* slider section */
 
 .slider_section {
     flex: 1;
-    display: flex;
+    display: grid;
     align-items: center;
-    padding: 75px 0;
+    padding: 10px 0 55px 0;
     background-color: #f5f6f9;
     position: relative;
+    .search_form {
+        display: grid;
+        margin: 0;
+        width: fit-content;
+        padding-bottom: 65px;
+        position: relative;
+        margin-left: auto;
+        margin-right: 10px;
+        .form-control {
+            border-radius: 45px;
+            height: 40px;
+            min-width: unset;
+            border: none;
+        }
+        button {
+            position: absolute;
+            top: 3px;
+            right: 3px;
+            width: 35px;
+            height: 35px;
+            padding: 0;
+            border: none;
+            outline: none;
+            color: $white;
+            background-color: $primary1;
+            border-radius: 100%;
+        }
+    }
     .row {
         align-items: center;
     }
@@ -391,6 +564,12 @@ a:focus {
 }
 
 // end catagory section
+
+/* view book section*/
+
+
+/* view book section*/
+
 // about section
 .about_section {
     position: relative;
