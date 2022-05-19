@@ -119,8 +119,8 @@ a:focus {
   display: -ms-grid;
   display: grid;
   margin: 20px;
-  -webkit-transform: translate(10%, 10%);
-          transform: translate(10%, 10%);
+  -webkit-transform: translate(40%, 10%);
+          transform: translate(40%, 10%);
 }
 
 .search-login .frm-login .login {
@@ -128,6 +128,7 @@ a:focus {
   width: 120%;
   height: 36px;
   padding: 0 25px;
+  left: 50%;
   background-color: #fd922e;
   color: #ffffff;
   border-radius: 18px;
@@ -260,7 +261,7 @@ a:focus {
   left: 0;
 }
 
-form {
+.container-login form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -688,101 +689,12 @@ form {
 }
 
 /* view book section*/
-.view-section {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+.view-book {
   display: -ms-grid;
   display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 10px 0 55px 0;
-  background-color: #f2f2f3;
-  position: relative;
-}
-
-.view-section .row {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.view-section #customCarousel1 {
-  width: 100%;
-  position: unset;
-}
-
-.view-section .detail-box h5 {
-  color: #fd922e;
-}
-
-.view-section .detail-box h1 {
-  font-weight: bold;
-  margin-bottom: 25px;
-  line-height: 58px;
-  font-size: 3rem;
-}
-
-.view-section .detail-box a {
-  display: inline-block;
-  padding: 10px 45px;
-  background-color: #fd922e;
-  color: #ffffff;
-  border-radius: 45px;
-  border: 1px solid #fd922e;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  margin-top: 15px;
-}
-
-.view-section .detail-box a:hover {
-  background-color: transparent;
-  color: #fd922e;
-}
-
-.view-section .img-box img {
-  width: 100%;
-}
-
-.view-section .carousel_btn_box {
-  position: absolute;
-  bottom: 0;
-  left: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 105px;
-  height: 50px;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-  z-index: 3;
-}
-
-.view-section .carousel_btn_box .carousel-control-prev,
-.view-section .carousel_btn_box .carousel-control-next {
-  position: unset;
-  width: 50px;
-  height: 50px;
-  background-color: #041c32;
-  opacity: 1;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  font-size: 18px;
-  border-radius: 100%;
-}
-
-.view-section .carousel_btn_box .carousel-control-prev img,
-.view-section .carousel_btn_box .carousel-control-next img {
-  width: 10px;
-}
-
-.view-section .carousel_btn_box .carousel-control-prev:hover,
-.view-section .carousel_btn_box .carousel-control-next:hover {
-  background-color: #fd922e;
+  margin: 20px;
+  -webkit-transform: translate(10%, 10%);
+          transform: translate(10%, 10%);
 }
 
 /* view book section*/

@@ -129,13 +129,14 @@ a:focus {
     display: grid;
     margin: 20px;
     -ms-transform: translate(100%, 100%);
-    transform: translate(10%, 10%);
+    transform: translate(40%, 10%);
     .frm-login {
         .login {
             position: relative;
             width: 120%;
             height: 36px;
             padding: 0 25px;
+            left: 50%;
             background-color: $primary1;
             color: #ffffff;
             border-radius: 18px;
@@ -256,16 +257,18 @@ a:focus {
     left: 0;
 }
 
-form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0rem 5rem;
-    transition: all 0.2s 0.7s;
-    overflow: hidden;
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+.container-login {
+    form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0rem 5rem;
+        transition: all 0.2s 0.7s;
+        overflow: hidden;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
 }
 
 .signin {
@@ -566,6 +569,13 @@ form {
 // end catagory section
 
 /* view book section*/
+
+.view-book {
+    display: grid;
+    margin: 20px;
+    -ms-transform: translate(100%, 100%);
+    transform: translate(10%, 10%);
+}
 
 
 /* view book section*/

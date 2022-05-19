@@ -47,17 +47,3 @@
         overflow: hidden;
     }
 }
-
-@media (max-width: 1140px) {
-    .row .col-lg-3 {
-        padding: 15px;
-        width: 25%;
-    }
-}
-
-@media (min-width: 1200px) {
-    .row .col-xl-3 {
-        padding: 15px;
-        width: 25%;
-    }
-}
