@@ -689,14 +689,6 @@ a:focus {
 }
 
 /* view book section*/
-.view-book {
-  display: -ms-grid;
-  display: grid;
-  margin: 20px;
-  -webkit-transform: translate(10%, 10%);
-          transform: translate(10%, 10%);
-}
-
 /* view book section*/
 .about_section {
   position: relative;
