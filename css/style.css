@@ -464,6 +464,111 @@ a:focus {
   padding: 0.7rem 0;
 }
 
+.container-login .left-panel {
+  pointer-events: none;
+}
+
+@media (max-width: 870px) {
+  .container-login {
+    min-height: 800px;
+    height: 100vh;
+  }
+  .container-login:before {
+    width: 1500px;
+    height: 1500px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    left: 30%;
+    bottom: 68%;
+    right: initial;
+    top: initial;
+    -webkit-transition: 2s ease-in-out;
+    transition: 2s ease-in-out;
+  }
+  .signin {
+    width: 100%;
+    top: 78%;
+    -webkit-transform: translate(-50%, -100%);
+            transform: translate(-50%, -100%);
+    -webkit-transition: 1s 0.8s ease-in-out;
+    transition: 1s 0.8s ease-in-out;
+  }
+  .signin,
+  .container-login .signin {
+    left: 50%;
+  }
+  .panels-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 2fr;
+        grid-template-rows: 1fr 2fr;
+  }
+  .panel {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2.5rem 8%;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+  }
+  .image {
+    width: 200px;
+    -webkit-transition: -webkit-transform 0.9s ease-in-out;
+    transition: -webkit-transform 0.9s ease-in-out;
+    transition: transform 0.9s ease-in-out;
+    transition: transform 0.9s ease-in-out, -webkit-transform 0.9s ease-in-out;
+    -webkit-transition-delay: 0.6s;
+            transition-delay: 0.6s;
+  }
+  .left-panel {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+  }
+  .panel .content {
+    padding-right: 15%;
+    -webkit-transition: -webkit-transform 0.9s ease-in-out;
+    transition: -webkit-transform 0.9s ease-in-out;
+    transition: transform 0.9s ease-in-out;
+    transition: transform 0.9s ease-in-out, -webkit-transform 0.9s ease-in-out;
+    -webkit-transition-delay: 0.8s;
+            transition-delay: 0.8s;
+  }
+  .panel h3 {
+    font-size: 1.2rem;
+  }
+  .panel p {
+    font-size: 0.7rem;
+    padding: 0.5rem 0;
+  }
+}
+
+@media (max-width: 570px) {
+  .container-login form {
+    padding: 0 1.5rem;
+  }
+  .image {
+    display: none;
+  }
+  .panel .content {
+    padding: 0.5rem 1rem;
+  }
+  .container-login {
+    padding: 1.5rem;
+  }
+  .container-login:before {
+    bottom: 72%;
+    left: 50%;
+  }
+}
+
 /* end login form section */
 /* slider section */
 .slider_section {
@@ -689,14 +794,6 @@ a:focus {
 }
 
 /* view book section*/
-.view-book {
-  display: -ms-grid;
-  display: grid;
-  margin: 20px;
-  -webkit-transform: translate(10%, 10%);
-          transform: translate(10%, 10%);
-}
-
 /* view book section*/
 .about_section {
   position: relative;
